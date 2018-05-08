@@ -16,9 +16,20 @@ namespace day_3
 
             double rezultats = Funkcija2();
             Console.WriteLine(rezultats);
+
             int rezultats1 = Funkcija4(3, 6);
             Console.WriteLine(rezultats1);
 
+            string rezultats2;
+            rezultats2 = Funkcija5("es ","tu ","mes" );
+            Console.WriteLine(rezultats2 +" un viss kopaa");
+
+            string var1, var2, var3;
+            var1 = Console.ReadLine();
+            var2 = Console.ReadLine();
+            var3 = Console.ReadLine();
+            string rezultats4 = Funkcija5(var1, var2, var3);
+            Console.WriteLine(rezultats4);
             Console.ReadLine();
 
         }
@@ -48,10 +59,16 @@ namespace day_3
             Console.WriteLine(c);
 
         }
-        static int Funkcija4(int skaitlis3, int skaitlis4)
+        static int Funkcija4(int skaitlis1, int skaitlis2)
         {
-            int c = skaitlis3 + skaitlis4;
+            int c = skaitlis1 + skaitlis2;
             return c;
+
+        }
+        static string Funkcija5(string vards1, string vards2, string vards3)
+        {
+            string result = vards1 + vards2 + vards3;
+            return result;
 
         }
 
